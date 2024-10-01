@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function exibirProdutos(produtos) {
-    produtosContainer.innerHTML = produtos.slice().map(produto => `
+    produtosContainer.innerHTML = produtos.slice(0, 14).map(produto => `
       <div class="produto" data-id="${produto.id}">
         <img src="${produto.image_link}" alt="${produto.name}">
         <h3>${produto.name}</h3>
