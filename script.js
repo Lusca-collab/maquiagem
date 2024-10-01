@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const filtroInput = document.getElementById("filtroInput");
   const filtroTipo  = document.getElementById("filtroTipo");
 
-  const url = 'http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline';
+  const url = 'https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline';
 
   let produtos = [];
   let favoritos = JSON.parse(localStorage.getItem('favoritos')) || [];
